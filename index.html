@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -18,12 +17,13 @@
   <div id="myBtnContainer" class="filtro">
     <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
     <button class="btn" onclick="filterSelection('hamburguesa')"> Hamburguesas</button>
-    <button class="btn" onclick="filterSelection('ternera')"> Ternera</button>
+    <button class="btn" onclick="filterSelection('ternera')"> Vacuno</button>
     <button class="btn" onclick="filterSelection('pollo')"> Pollo</button>
     <button class="btn" onclick="filterSelection('cerdo')"> Cerdo</button>
     <button class="btn" onclick="filterSelection('ensalada')"> Ensalada</button>
     <button class="btn" onclick="filterSelection('vegano')"> Vegano</button>
     <button class="btn" onclick="filterSelection('postre')"> Postres</button>
+    <button class="btn" onclick="filterSelection('bebida')"> Bebidas</button>
   </div>
   </div>
   <body>
@@ -181,7 +181,7 @@
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
             <div class="card-body">
-              <p class="card-text">TERNERA</p>
+              <p class="card-text">Filete de Ternera</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -239,16 +239,46 @@
                 </div>
               </div>
             </div>
+        </div>
+          <div class="col filterDiv bebida">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Cerveza Artesana Domus</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
           </div>
-        
+          <div class="col filterDiv bebida">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">Vino de Toledo</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
-
 </main>
 
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scriptFiltro.js"></script>
 
   </body>
 </html>
