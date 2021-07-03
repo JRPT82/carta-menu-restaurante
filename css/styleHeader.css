@@ -35,12 +35,12 @@
   }
   
   #navbar a:hover{
-    background-color: #ddd;
+    background-color: #FFC72C;
     color: black;
   }
   
   #navbar a.activado{
-    background-color: #04AA6D;
+    background-color: #F2A900;
     color: white;
   }
   
