@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ricardo Perera">
 
-<title>Album example · Bootstrap v5.0</title>
+<title>MENU</title>
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styleHeader.css">
@@ -14,23 +14,37 @@
 <div class="container filtro">
   </head>
   <body>
-  <header>
-    <div class="header">
-        <h2>COMIDA RAPIDA</h2>
-        <p>Tenemos hasta Vegana ...</p>
-    </div>
+    <header>
+      <div class="header">
 
-    <div id="navbar">
+        <div id="carouselIntervalo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-caption">
+            <h1 class="display">MENÚ DE COMIDA NO TAN SANA</h1>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/banner-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/banner-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/banner-3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="navbar">
         <a class="activado" href="#">Menú</a>
         <a href="#">¿Quienes somos?</a>
         <a href="#">Contacto</a>
-    </div>
-</header>
-<!-- 
-  <h2>Filtro de comidas</h2> -->
-  <br>
+      </div>
+    </header>
+    
+
   <div id="myBtnContainer" class="filtro">
-    <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+    <button class="btn activeFilter" onclick="filterSelection('all')"> Mostrar todos</button>
     <button class="btn" onclick="filterSelection('hamburguesa')"> Hamburguesas</button>
     <button class="btn" onclick="filterSelection('ternera')"> Vacuno</button>
     <button class="btn" onclick="filterSelection('pollo')"> Pollo</button>
@@ -48,242 +62,153 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col filterDiv ensalada">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">ENSALADA</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+          <div class="card shadow-sm card-plato">
+            <img src="img/ensaladas verde/ensalada-aguacate.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body texto-plato">
+              <h5>Ensalada</h5>
+              <p class="card-text">ENSALADA vegana para comer</p>
             </div>
           </div>
         </div>
         <div class="col filterDiv ensalada pollo">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
+          <div class="card shadow-sm card-plato">
+            <img src="img/ensaladas pollo/ensalada-p-manzana-queso.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body texto-plato">
+              <h5>Ensalada de Pollo</h5>
               <p class="card-text">ENSALADA DE POLLO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
           </div>
         </div>
         <div class="col filterDiv ensalada vegano">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
+            <div class="card shadow-sm card-plato">
+              <img src="img/ensaladas verde/ensalada-esparragos-frutos.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <div class="card-body texto-plato">
+                <h5>Ensalada de Tofu</h5>
                 <p class="card-text">ENSALADA DE TOFU</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
               </div>
             </div>
           </div>
         <div class="col filterDiv hamburguesa ternera">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">HAMBUERGUESA DE TERNERA</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamburguesas ternera/600x400-1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Ternera</h5>
+              <p class="card-text">Jugosa carne de Vacuno bien condimentada</p>
             </div>
           </div>
         </div>
         <div class="col filterDiv hamburguesa pollo">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamb-pollo/hamburguesa-de-pollo.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
-              <p class="card-text">HAMBURGUESA DE POLLO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Pollo</h5>
+              <p class="card-text">Pechuga de pollo</p>
             </div>
           </div>
         </div>
         <div class="col filterDiv hamburguesa cerdo">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamburguesas ternera/600x400-3.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Cerdo</h5>
               <p class="card-text">HAMBURGUESA DE CERDO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
           </div>
         </div>
         <div class="col filterDiv hamburguesa vegano">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card shadow-sm card-plato">
+              <img src="img/hamburguesas tofu/600x400-T1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
   
-              <div class="card-body">
+              <div class="card-body texto-plato">
+                <h5>Hamburguesa de Tofu</h5>
                 <p class="card-text">HAMBURGUESA DE TOFU</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
               </div>
             </div>
           </div>
         <div class="col filterDiv postre">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/postres/tarta-fresas.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
-              <p class="card-text">POSTRE tarta de chocolate</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card-body texto-plato">
+              <h5>Tarta de Fresas</h5>
+              <p class="card-text">Tarta de Fresas</p>
             </div>
           </div>
         </div>
         <div class="col filterDiv postre">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card shadow-sm card-plato">
+              <img src="img/postres/flan-de-dulce-de-leche.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
   
-              <div class="card-body">
-                <p class="card-text">POSTRE tarta de queso</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
+              <div class="card-body texto-plato">
+                <h5>Dulce de Leche</h5>
+                <p class="card-text">Dulce de Leche</p>
+                
               </div>
             </div>
           </div>
         <div class="col filterDiv ternera">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamburguesas ternera/600x400-4.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
-              <p class="card-text">Filete de Ternera</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de ternera</h5>
+              <p class="card-text">Hamburguesa de ternera extra</p>
+              
             </div>
           </div>
         </div>
         <div class="col filterDiv pollo">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamb-pollo/hamburguesa-pollo-queso.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
-              <p class="card-text">POLLO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Pollo</h5>
+              <p class="card-text">Hamburguesa de Pollo con mucho queso</p>
+       
             </div>
           </div>
         </div>
         <div class="col filterDiv cerdo">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="card shadow-sm card-plato">
+            <img src="img/hamburguesas ternera/600x400-1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
 
-            <div class="card-body">
-              <p class="card-text">CERDO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de cerdo XXL</h5>
+              <p class="card-text">Hamburguesa de cerdo XXL</p>
             </div>
           </div>
         </div>
         <div class="col filterDiv vegano">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card shadow-sm card-plato">
+              <img src="img/hamburguesas tofu/600x400-T2.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
   
-              <div class="card-body">
-                <p class="card-text">TOFU</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
+              <div class="card-body texto-plato">
+                <h5>Hamburguesa de Tofu con rucula</h5>
+                <p class="card-text">Hamburguesa de Tofu con rucula</p>
               </div>
             </div>
         </div>
           <div class="col filterDiv bebida">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card shadow-sm card-plato">
+              <img src="img/bebidas/cocacola.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
   
-              <div class="card-body">
-                <p class="card-text">Cerveza Artesana Domus</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
+              <div class="card-body texto-plato">
+                <h5>Always ...</h5>
+                <p class="card-text">CocaCola</p>
+
               </div>
             </div>
           </div>
           <div class="col filterDiv bebida">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card shadow-sm card-plato">
+              <img src="img/bebidas/cerveza.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
   
-              <div class="card-body">
-                <p class="card-text">Vino de Toledo</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
+              <div class="card-body texto-plato">
+                <h5>Cerveza</h5>
+                <p class="card-text">Cerveza</p>
+                
               </div>
             </div>
           </div>
@@ -292,9 +217,104 @@
   </div>
 </main>
 
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/scriptHeader.js"></script>
-    <script src="js/scriptFiltro.js"></script>
 
+<!-- Footer -->
+</div> <!-- container end -->
+<footer class="bg-dark text-center text-white">
+  
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Compañeros de clase:
+      </p>
+    </section>
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text">Tecnologías comunes utilizadas.</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="text-white">CSS</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="text-white">HTML</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="text-white">JS</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://github.com/canodelacuadra/carta-menu-restaurante" class="text-white">canodelacuadra</a>
+            </li>
+            <li>
+              <a href="https://github.com/AzraelSegura/carta_menu_restaurante" class="text-white">AzraelSegura</a>
+            </li>
+            <li>
+              <a href="https://github.com/adomuf/carta-menu-restaurante" class="text-white">adomuf</a>
+            </li>
+            <li>
+              <a href="https://github.com/MaryGels/carta-menu-restaurante" class="text-white">MaryGels</a>
+            </li>
+            <li>
+              <a href="https://github.com/JorgeALozanoTariche/carta-menu-restaurante" class="text-white">JorgeALozanoTariche</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://github.com/tatvil71/carta-menu-restaurante" class="text-white">tatvil71</a>
+            </li>
+            <li>
+              <a href="https://github.com/jeroboan2002/carta-menu-restaurante" class="text-white">jeroboan2002</a>
+            </li>
+            <li>
+              <a href="https://github.com/ehcDesign/carta-menu-restaurante" class="text-white">ehcDesign</a>
+            </li>
+            <li>
+              <a href="https://github.com/macebron/carta-menu-restaurante" class="text-white">macebron</a>
+            </li>
+            <li>
+              <a href="https://github.com/rutribada/carta-menu-restaurante" class="text-white">rutribada</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://github.com/JRPT82/carta-menu-restaurante">JRPT82</a>
+    <p><i class="fab fa-facebook-f"></i>Facebook</p>
+    
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/scriptHeader.js"></script>
+<script src="js/scriptFiltro.js"></script>
 </body>
 </html>
