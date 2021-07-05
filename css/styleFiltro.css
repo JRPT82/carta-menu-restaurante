@@ -84,6 +84,8 @@ border-color: #27251F;
     opacity: 1;
   }
 }
+  
+
 /* Stylo de Carousel */
 .carousel-item {
   position: relative;
@@ -111,4 +113,9 @@ border-color: #27251F;
 h1{
   text-shadow: 2px 2px 5px black;
   align-items: center;
+}
+
+.infoIcon{
+  margin-right: 0;
+
 }
